@@ -1,6 +1,7 @@
 // initial value
 export const initialState={
     basket:[],
+    user:null,
 
 };
 // Selector for total price using REDUCE() function, it will take all item's price and sum them, initialy it set to 0.
@@ -31,6 +32,11 @@ const reducer =(state,action)=>{
                     ...state,
                     basket: newBasket,
                 }
+        case 'SET_USER':
+            return {
+                ...state,
+                user:action.user
+            }
         default:
             return state
     }
