@@ -42,6 +42,10 @@
     margin-left: 10px;
     margin-right: 10px;
     color: white;
+    
+}
+a{
+    text-decoration: none;
 }
 .header_optionLineOne{
 font-size: 10px;
