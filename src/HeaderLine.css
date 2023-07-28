@@ -1,0 +1,35 @@
+/* HeaderLine.css */
+.header_line {
+    padding-top: 7px;
+    padding-bottom: 7px; /* Update to set equal padding on top and bottom */
+    height: 30px;
+    display: flex;
+    align-items: center; /* Align items vertically at the center */
+    background-color: #232f3e;
+    top: 0;
+    z-index: 100;
+    color: white;
+    padding-left: 20px;
+  }
+  
+  .header_line > div {
+    cursor: pointer;
+    float: left; /* Float the divs to the left */
+    margin-right: 20px; /* Add space between the divs */
+    &&:hover {
+      border-bottom: 1px solid white;
+    }
+  }
+  
+  /* Clear the float to prevent affecting other components */
+  .header_line::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .icon {
+    vertical-align: middle; /* Adjust icon alignment with text */
+    margin-right: 5px; /* Add some spacing between the icon and the text */
+  }
+  

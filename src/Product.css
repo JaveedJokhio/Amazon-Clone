@@ -13,6 +13,13 @@
     min-width: 100px;
     background-color:white;
     z-index: 1;
+    transition: transform 0.3s ease; /* Add the transition for the transform property */
+}
+
+/* Apply the scale transformation on hover */
+.product:hover {
+  transform: scale(1.03); /* Increase the scale to make it slightly larger */
+  cursor: pointer;
 }
 .product > img{
     max-height: 200px;
@@ -20,13 +27,31 @@
     object-fit: contain;
     margin-bottom: 15px;
 }
+
+
 .product > button{
-    background: #f0c14b;
-    border: 1px solid;
-    margin-top: 10px;
-    border-color: #a88734 #9c7e31 #846a29;
-    color: #111;
+    height: 33px;
+    width: 50%;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+    background: #FFD814;
+    border-color: #FCD200;
+    border-style: solid;
+    border-width: 1px;
     cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    line-height: 30px;
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+    &&:hover{
+        background-color: #111;
+        color: #ffffff;;
+    }
 }
 .product_info{
     height: 100px;

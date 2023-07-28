@@ -6,6 +6,7 @@ import Badge from '@mui/material/Badge';
 import { Link } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 import { auth } from "./firebase.js"; 
+import HeaderLine from './HeaderLine';
 
 const Header = () => {
 
@@ -18,6 +19,7 @@ const Header = () => {
   }
 
   return (
+    <>
     <div className='header'>
       <Link to='/'>
       <img className='header_logo' src='https://pngimg.com/uploads/amazon/amazon_PNG11.png' alt='amazon-logo' />
@@ -25,7 +27,7 @@ const Header = () => {
       </Link>
 
       <div className='header_search'>
-        <input className='header_searchInput' type='text' />
+        <input className='header_searchInput' type='text' placeholder='Search Amazon' />
         <SearchIcon className='header_searchIcon' />
       </div>
       <div className='header_nav'>
@@ -35,10 +37,12 @@ const Header = () => {
           <span className='header_optionLineTwo'>{user? 'Sign Out' : 'Sign In'}</span>
         </div>
         </Link>
+        <Link to={'/orders'}>
         <div className='header_option'>
           <span className='header_optionLineOne'>Returns</span>
           <span className='header_optionLineTwo'> & Order</span>
         </div>
+        </Link>
         <div className='header_option'>
           <span className='header_optionLineOne'>Your</span>
           <span className='header_optionLineTwo'>Prime</span>
@@ -56,7 +60,10 @@ const Header = () => {
         </Link>
         
       </div>
+      
     </div>
+    <HeaderLine/>
+    </>
   )
 }
 
