@@ -19,7 +19,7 @@ const Header = () => {
   }
 
   return (
-    <>
+    <> 
     <div className='header'>
       <Link to='/'>
       <img className='header_logo' src='https://pngimg.com/uploads/amazon/amazon_PNG11.png' alt='amazon-logo' />

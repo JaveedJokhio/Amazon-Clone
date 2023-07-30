@@ -6,7 +6,6 @@ import CurrencyFormat from 'react-currency-format'
 import { useStateValue } from './StateProvider'
 
 
-
 function Order({ order }) {
 
     const [{ basket, user }, dispatch] = useStateValue()

@@ -9,6 +9,9 @@ function Orders() {
   const [{ user }, dispatch] = useStateValue();
   const [orders, setOrders] = useState([]);
 
+
+  
+
   useEffect(() => {
     const fetchOrders = async () => {
       if (user) {
@@ -22,6 +25,7 @@ function Orders() {
           }));
 
           setOrders(userOrders);
+          
         } catch (error) {
           console.error('Error fetching orders:', error);
         }

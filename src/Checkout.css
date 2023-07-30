@@ -13,3 +13,9 @@
     padding: 10px;
     border-bottom: 1px solid lightgray;
 }
+@media screen and (max-width: 768px) {
+    .checkout {
+      flex-direction: column; /* Change to a single column layout */
+      align-items: center; /* Center the items in the column */
+    }
+  }

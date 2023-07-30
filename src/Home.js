@@ -15,11 +15,44 @@ const Home = () => {
 
                 </div>
                 <div className='home_row'>
+                <Product id='7' 
+                title="Apple MacBook Air (13-inch Retina display, 1.6GHz dual-core Intel Core i5, 128GB) - Gold (Renewed)" 
+                price={550} 
+                image="https://m.media-amazon.com/images/I/71thf1SYnGL._AC_SL1500_.jpg" 
+                rating={5} />
+
+                <Product id='8' title="ZAGG InvisibleShield Ultra Clear – Compatible with Apple Watch Ultra, Watch Size: 49mm Face - Film Screen Protector" price={14} image="https://m.media-amazon.com/images/I/71KHrMHx9eL._AC_SX679_.jpg" rating={5} />
+
+                <Product id='9' 
+                title="ZAGG InvisibleShield Glass+ Screen Protector for Apple iPhone 13/ 13 Pro - Impact & Scratch Protection, Easy to Install" price={10} 
+                image="https://m.media-amazon.com/images/I/61nYfhjNGKL._AC_SX679_.jpg" rating={5} />
+
+
+                </div>
+                <div className='home_row'>
                 <Product id='3' title="Apple iPad (9th Generation): with A13 Bionic chip, 10.2-inch Retina Display, 64GB, Wi-Fi, 12MP front/8MP Back Camera, Touch ID, All-Day Battery Life – Space Gray" price={270} image="https://m.media-amazon.com/images/I/61NGnpjoRDL._AC_SX466_.jpg" rating={4} />
 
                 <Product id='4' title="Fitbit Charge 5 Advanced Health & Fitness Tracker with Built-in GPS" price={119} image="https://m.media-amazon.com/images/I/61YXnbbNrgL._AC_SX569_.jpg" rating={5} />
 
-                <Product id='5' title="Meta Quest 2 — Advanced All-In-One Virtual Reality Headset — 128 GB" price={299} image="https://m.media-amazon.com/images/I/61tE7IcuLmL._AC_SX425_.jpg" rating={5} />
+                <Product id='5' 
+                title="The Ultimate Sketchbook for Creative Kids - Notebook for Drawing, Writing,120 Pages," price={10} 
+                image="https://m.media-amazon.com/images/I/511cN5spUbL._SX384_BO1,204,203,200_.jpg" rating={4} />
+                <Product id='10' title="Meta Quest 2 — Advanced All-In-One Virtual Reality Headset — 128 GB" price={299} image="https://m.media-amazon.com/images/I/61tE7IcuLmL._AC_SX425_.jpg" rating={5} />
+
+
+                </div>
+                <div className='home_row'>
+                <Product id='11' 
+                title="JYDQM Beach Pants Set Men's Hawaiian Collection Beach Style Suit Collar Print Short Sleeves" price={260} 
+                image="https://m.media-amazon.com/images/I/719kT+2k0EL._AC_SY300_SX300_.jpg" rating={4} />
+
+                <Product id='12' title="Under Armour boys Short Sleeve Tee and Short Set, Lightweight and Breathable" price={24} image="https://m.media-amazon.com/images/I/71Vpr1LmkuL._AC_UX425_.jpg" rating={5} />
+
+                <Product id='13' 
+                title="PS by Paul Smith Mens Reg Fit T-Shirt Broken Board" price={95} 
+                image="https://m.media-amazon.com/images/I/616szjO-80L._AC_UX522_.jpg" rating={4} />
+
+                <Product id='14' title="PS by Paul Smith Tall Size Mens Casual Fit Jacket" price={395} image="https://m.media-amazon.com/images/I/71aKIeFdtML._AC_UY500_.jpg" rating={5} />
 
 
                 </div>

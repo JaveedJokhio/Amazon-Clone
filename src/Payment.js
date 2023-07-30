@@ -12,7 +12,14 @@ import { doc, setDoc } from 'firebase/firestore';
 
 
 
+
+
 function Payment() {
+
+  
+
+
+
 
     const navigate = useNavigate()
 
@@ -41,7 +48,7 @@ function Payment() {
         getCleintSecret();
     }, [basket])
 
-    console.log("the secret is ",clientSecret)
+    console.log("the secret is ", clientSecret)
 
     const handleSubmit = async (e) => {
         // strip code
@@ -54,7 +61,7 @@ function Payment() {
                     card: elements.getElement(CardElement)
                 }
             });
-    
+
             if (paymentIntent) {
                 // Payment successful, save data to Firestore
                 const orderRef = doc(db, 'users', user?.uid, 'orders', paymentIntent.id);
@@ -63,16 +70,19 @@ function Payment() {
                     amount: paymentIntent.amount,
                     created: paymentIntent.created
                 });
-    
+
                 setSucceeded(true);
                 setError(null);
                 setProcessing(false);
-    
+
+               
+
                 dispatch({
                     type: 'EMPTY_BASKET'
                 });
-    
+
                 navigate('/orders', { replace: true });
+
             } else {
                 // Payment failed
                 setError('Payment failed. Please try again.');
@@ -103,8 +113,14 @@ function Payment() {
                     </div>
                     <div className='payment_address'>
                         <p>{user?.email}</p>
-                        <p>Gharo</p>
-                        <p>District Thatta, Sindh, Pakistan</p>
+
+                        <label>District:</label>
+                        <input placeholder='District' className='inputs' />
+                        <label>City:</label>
+                        <input placeholder='City' className='inputs' />
+                        <label>Address:</label>
+                        <input placeholder='type address here' className='inputs' />
+
                     </div>
 
                 </div>
@@ -160,6 +176,7 @@ function Payment() {
                     </div>
                 </div>
             </div>
+            
         </div>
     )
 }

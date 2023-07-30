@@ -4,12 +4,15 @@
     display: flex;
     flex-direction: column;
     align-items:center;
-}
+    background-image: linear-gradient(to right, #fee7c8, #efeae5);
+
+}    
+
 .login_logo{
     margin-top: 20px;
     margin-bottom: 20px;
     object-fit: contain;
-    width: 100px;
+    width: 150px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -43,21 +46,89 @@
     font-size: 12px;
 }
 .login_button{
-    background: #f0c14b;
-    border: 1px solid;
-    border-radius: 2px;
+    height: 33px;
     width: 100%;
-    height: 30px;
-    margin-top: 10px;
-    border-color: #a88734 #9c7e31 #846a29;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+    background: #FFD814;
+    border-color: #FCD200;
+    border-style: solid;
+    border-width: 1px;
     cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    line-height: 30px;
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+    &&:hover{
+        background-color: #111;
+        color: #ffffff;;
+    }
 }
 .login_signup_button{
-    border-radius: 2px;
+    height: 33px;
     width: 100%;
-    height: 30px;
-    border: 1px solid;
-    margin-top: 10px;
-    border-color: darkgray;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+    background: #065c67;
+    color: #ffffff;
+    border-color: #FCD200;
+    border-style: solid;
+    border-width: 1px;
     cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    line-height: 30px;
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+    &&:hover{
+        background-color:#FFD814;
+        color: #111
+    }
 }
+.google-icon {
+    display: flex;
+    align-items: center; /* Align the Google icon vertically with the text */
+    margin-top: 15px; /* Add some spacing from the paragraph above */
+  }
+  
+  .google-icon button {
+    display: flex;
+    align-items: center; /* Align the Google icon vertically with the text */
+    height: 40px;
+    width: 100%;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+    background: #fff;
+    color: #444;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    line-height: 30px;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .google-icon button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .google-icon-img {
+    width: 24px;
+    height: 24px;
+    margin-left: 70px;
+    margin-right: 8px; /* Add some spacing between the icon and the text */
+    object-fit: contain;
+  }

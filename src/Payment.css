@@ -1,6 +1,22 @@
 .payment{
     background-color: white;
 }
+.payment_address{
+   display: flex;
+   flex-direction: column;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .inputs {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px; /* Adjust the width as needed */
+  }
 .payment_container > h1{
     text-align: center;
     padding: 10px;
@@ -53,3 +69,16 @@ font-weight: bolder;
 
 
 }
+/* Media queries for responsive design */
+
+/* For screens with a maximum width of 768px (e.g., tablets and mobile phones) */
+@media screen and (max-width: 768px) {
+    .payment_section {
+      flex-direction: column; /* Stack sections in a single column */
+    }
+  
+    .payment_details > form {
+      max-width: 100%; /* Take the full width of the container */
+    }
+    
+  }

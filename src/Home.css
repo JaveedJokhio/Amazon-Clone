@@ -17,3 +17,17 @@
    margin-left: 5px;
    margin-right: 5px;
 }
+@media screen and (max-width: 768px) {
+    .home_image{
+        
+        margin-bottom: -90px;
+    } 
+    .home_row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product {
+        max-width: 100%;
+    }
+}

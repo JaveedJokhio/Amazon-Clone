@@ -33,3 +33,33 @@
     margin-right: 5px; /* Add some spacing between the icon and the text */
   }
   
+/* Media query for mobile size */
+@media screen and (max-width: 768px) {
+  .header_line {
+    padding-left: 10px; /* Adjust the padding for mobile size */
+  }
+
+  .header_line > div {
+    margin-right: 10px; /* Adjust the margin for mobile size */
+  }
+
+  .header_options {
+    display: none; /* Hide the options for mobile size */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #232f3e;
+  }
+
+  .header_line.mobile-active .header_options {
+    display: flex; /* Show options when .mobile-active class is applied */
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .header_line.mobile-active > div:not(.header-title) {
+    margin-top: 10px; /* Add space between the options for mobile size */
+  }
+}
